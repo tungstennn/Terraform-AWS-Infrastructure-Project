@@ -81,20 +81,13 @@ Here are areas where the project can be extended to add complexity and functiona
    - Use Auto Scaling Groups (ASGs) to manage instance scaling
    - Add an Elastic Load Balancer (ELB) to distribute traffic
 
-4. **State Management**:
-   - Store Terraform state remotely in an S3 bucket with versioning
-   - Enable state locking using DynamoDB
-
-5. **Monitoring and Logging**:
+4. **Monitoring and Logging**:
    - Configure CloudWatch for EC2 instance and VPC metrics
    - Enable S3 access logging
 
-6. **Automation and CI/CD**:
+5. **Automation and CI/CD**:
    - Use GitHub Actions or another CI/CD tool to automate Terraform workflows
    - Implement a pipeline for infrastructure provisioning and testing
-
-7. **Modularization**:
-   - Refactor the configuration files into reusable Terraform modules for S3, VPC, and EC2
 
 ---
 
