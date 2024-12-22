@@ -23,9 +23,9 @@ Follow these steps to deploy the infrastructure using Terraform:
 
 ### Prerequisites
 
-- [Terraform installed](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
-- AWS CLI configured with valid credentials.
-- An AWS account with sufficient permissions to create resources.
+- [Terraform installed](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- AWS CLI configured with valid credentials
+- An AWS account with sufficient permissions to create resources
 
 ### Steps
 
@@ -54,8 +54,8 @@ Follow these steps to deploy the infrastructure using Terraform:
    ```
 
 5. **Verify Resources**:
-   - Check the AWS Management Console to ensure resources are created successfully.
-   - Verify the S3 bucket, VPC, and EC2 instance.
+   - Check the AWS Management Console to ensure resources are created successfully
+   - Verify the S3 bucket, VPC, and EC2 instance
 
 6. **Clean Up Resources**:
    To destroy the created resources, run:
@@ -70,39 +70,39 @@ Follow these steps to deploy the infrastructure using Terraform:
 Here are areas where the project can be extended to add complexity and functionality:
 
 1. **Security Enhancements**:
-   - Implement IAM roles and policies to manage permissions securely.
-   - Use S3 bucket policies to restrict access.
+   - Implement IAM roles and policies to manage permissions securely
+   - Use S3 bucket policies to restrict access
    
 2. **Networking Additions**:
-   - Add multiple subnets (public and private) with appropriate route tables.
-   - Configure NAT Gateways and Network ACLs.
+   - Add multiple subnets (public and private) with appropriate route tables
+   - Configure NAT Gateways and Network ACLs
 
 3. **Scaling EC2 Instances**:
-   - Use Auto Scaling Groups (ASGs) to manage instance scaling.
-   - Add an Elastic Load Balancer (ELB) to distribute traffic.
+   - Use Auto Scaling Groups (ASGs) to manage instance scaling
+   - Add an Elastic Load Balancer (ELB) to distribute traffic
 
 4. **State Management**:
-   - Store Terraform state remotely in an S3 bucket with versioning.
-   - Enable state locking using DynamoDB.
+   - Store Terraform state remotely in an S3 bucket with versioning
+   - Enable state locking using DynamoDB
 
 5. **Monitoring and Logging**:
-   - Configure CloudWatch for EC2 instance and VPC metrics.
-   - Enable S3 access logging.
+   - Configure CloudWatch for EC2 instance and VPC metrics
+   - Enable S3 access logging
 
 6. **Automation and CI/CD**:
-   - Use GitHub Actions or another CI/CD tool to automate Terraform workflows.
-   - Implement a pipeline for infrastructure provisioning and testing.
+   - Use GitHub Actions or another CI/CD tool to automate Terraform workflows
+   - Implement a pipeline for infrastructure provisioning and testing
 
 7. **Modularization**:
-   - Refactor the configuration files into reusable Terraform modules for S3, VPC, and EC2.
+   - Refactor the configuration files into reusable Terraform modules for S3, VPC, and EC2
 
 ---
 
 ## Notes
 
-- Ensure AWS credentials are not hard-coded in any file. Use environment variables or AWS CLI configuration.
-- Add sensitive files like `terraform.tfstate` and `.terraform/` to `.gitignore`.
-- Follow best practices for infrastructure as code to maintain security and scalability.
+- Ensure AWS credentials are not hard-coded in any file. Use environment variables or AWS CLI configuration
+- Add sensitive files like `terraform.tfstate` and `.terraform/` to `.gitignore`
+- Follow best practices for IaC to maintain security and scalability
 
 ---
 
