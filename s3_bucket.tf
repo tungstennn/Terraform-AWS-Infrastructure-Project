@@ -20,5 +20,5 @@ resource "aws_s3_bucket_versioning" "versioning" {
 
 resource "aws_s3_object" "uploads_folder" {
   bucket = var.bucket_name
-  key    = "uploads"
+  key    = "uploads/"
 }
