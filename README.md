@@ -31,7 +31,7 @@ Follow these steps to deploy the infrastructure using Terraform:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo-name/terraform-aws-project.git
+   git clone https://github.com/tungstennn/Terraform-AWS-Infrastructure-Project.git
    cd terraform-aws-project
    ```
 
