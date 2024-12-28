@@ -44,13 +44,13 @@ Follow these steps to deploy the infrastructure using Terraform:
 3. **Set Variable Values**:
    Update the `bucket_name` variable by editing `variables.tf`:
    ```bash
-   terraform plan -var="bucket_name=your-unique-bucket-name"
+   terraform plan
    ```
 
 4. **Deploy the Infrastructure**:
    Apply the configuration to create the resources:
    ```bash
-   terraform apply -var="bucket_name=your-unique-bucket-name"
+   terraform apply
    ```
 
 5. **Verify Resources**:
