@@ -60,7 +60,7 @@ Follow these steps to deploy the infrastructure using Terraform:
 6. **Clean Up Resources**:
    To destroy the created resources, run:
    ```bash
-   terraform destroy -var="bucket_name=your-unique-bucket-name"
+   terraform destroy
    ```
 
 ---
